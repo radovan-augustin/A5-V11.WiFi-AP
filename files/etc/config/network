@@ -1,0 +1,10 @@
+config interface 'wan'
+    option ifname 'eth0'
+    option proto 'dhcp'
+    list dns '208.67.222.222'
+    list dns '208.67.220.220'
+
+config interface 'lan'
+    option proto 'static'
+    option ipaddr '192.168.1.1'
+    option netmask '255.255.255.0'
